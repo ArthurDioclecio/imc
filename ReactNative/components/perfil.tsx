@@ -13,7 +13,7 @@ export default function Perfil() {
         const imagemSelecionada = response.assets[0];
         if (imagemSelecionada.uri) {
           setFoto(imagemSelecionada.uri);
-          // Aqui você poderia enviar a imagem para um backend se quiser.
+          // ta funfando vava
         }
       } else {
         Alert.alert("Erro", "Nenhuma imagem foi selecionada.");
