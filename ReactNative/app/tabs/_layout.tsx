@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { View, useWindowDimensions } from 'react-native';
 import { TabView, SceneMap, TabBar } from 'react-native-tab-view';
-import IndexScreen from './index'; // Sua primeira aba (ex: Home)
-import Settings from './settings'; // Sua segunda aba (ex: Configurações)
-import user from './user'; // Sua terceira aba (ex: Perfil)
+import IndexScreen from './index'; 
+import Settings from './settings'; 
+import user from './user'; 
 
 export default function TabsLayout() {
   const layout = useWindowDimensions();
@@ -12,7 +12,7 @@ export default function TabsLayout() {
   const [routes] = useState([
     { key: 'home', title: 'Home' },
     { key: 'user', title: 'user' },
-     // exemplo de outra aba
+    
   ]);
 
   const renderScene = SceneMap({

@@ -9,7 +9,7 @@ export default function Header({ titulo }: HeaderProps) {
   return (
     <View style={styles.header}>
       <Text style={styles.headerText}>{titulo}</Text>
-         <Text style={styles.headerSubText}>insira valores e tera o resultado do IMC</Text>
+         <Text style={styles.headerSubText}>insira valores e terá o resultado do IMC</Text>
     </View>
   );
 }

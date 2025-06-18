@@ -77,9 +77,18 @@ export default function Form() {
 function calculo(text: string, text1: string) {
   let peso = 0;
   let altura = 0;
+  let peso1 = "";
+  let altura1 = "";
   try {
-    peso = parseFloat(text.replace(",", "."));
-    altura = parseFloat(text1.replace(",", "."));
+    peso1 = text.replace(",", "");
+    altura1 = text1.replace(".", "");
+    peso1 = peso1.replace(".", "");
+    altura1 = altura1.replace(",", "");
+    
+    peso = parseFloat(peso1);
+    altura = parseFloat(altura1);
+
+
     altura = altura / 100;
     altura = altura * altura;
     let resultado = 0.0;

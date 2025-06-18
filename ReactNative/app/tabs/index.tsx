@@ -21,9 +21,9 @@ export default function TabHome() {
   return (
     <ScrollView style={{ flex: 1, backgroundColor: "#f4f6fa" }}>
       <View style={{ alignItems: "center", paddingBottom: 32 }}>
-        <Header titulo="imc" /> {/* funciona como header */}
-        <Form /> {/* funciona como um body */}
-        <Pesquisa /> {/* funciona como um body */}
+        <Header titulo="imc" /> {/*header */}
+        <Form /> {/*body */}
+        <Pesquisa /> {/*body */}
       </View>
     </ScrollView>
   );

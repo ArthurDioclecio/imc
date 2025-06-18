@@ -7,8 +7,8 @@ export default function PerfilTab() {
  return (
     <ScrollView style={{ flex: 1, backgroundColor: "#f4f6fa" }}>
       <View style={{ alignItems: "center", paddingBottom: 32 }}>
-        <Header titulo="IMC" /> {/* funciona como header */}
-        <Perfil /> {/* componente de perfil que pode conter informações do usuário */}
+        <Header titulo="IMC" /> 
+        <Perfil /> 
 
       </View>
     </ScrollView>

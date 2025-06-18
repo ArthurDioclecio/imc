@@ -1,16 +1,32 @@
-import React from "react";
-import { View, Text, StyleSheet, Image, } from "react-native";
+import React, { useState } from "react";
+import { View, Text, StyleSheet, Image, Button, Alert } from "react-native";
+import { launchImageLibrary } from "react-native-image-picker";
 
 export default function Perfil() {
+  const [foto, setFoto] = useState<string>("https://i.pravatar.cc/150");
+
+  const escolherFoto = () => {
+    launchImageLibrary({ mediaType: "photo" }, (response) => {
+      if (response.didCancel) return;
+
+      if (response.assets && response.assets.length > 0) {
+        const imagemSelecionada = response.assets[0];
+        if (imagemSelecionada.uri) {
+          setFoto(imagemSelecionada.uri);
+          // Aqui você poderia enviar a imagem para um backend se quiser.
+        }
+      } else {
+        Alert.alert("Erro", "Nenhuma imagem foi selecionada.");
+      }
+    });
+  };
+
   return (
     <View style={styles.container}>
-      <Image
-        source={{ uri: "https://i.pravatar.cc/150" }}
-        style={styles.avatar}
-      />
+      <Image source={{ uri: foto }} style={styles.avatar} />
+      <Button title="Alterar Foto" onPress={escolherFoto} />
       <Text style={styles.nome}>Nome do Usuário</Text>
       <Text style={styles.email}>usuario@email.com</Text>
-      {/* Adicione mais informações do perfil aqui */}
     </View>
   );
 }
