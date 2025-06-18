@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
   header: {
     width: "100%",
     paddingVertical: 28,
-    backgroundColor: "#4f8cff",
+    backgroundColor: "fff",
     alignItems: "center",
     justifyContent: "center",
     borderBottomLeftRadius: 18,
@@ -30,14 +30,14 @@ const styles = StyleSheet.create({
     shadowRadius: 4,
   },
   headerText: {
-    color: "#fff",
+    color: "#4f8cff",
     fontSize: 24,
     fontWeight: "bold",
     letterSpacing: 1,
   },
 
     headerSubText: {
-    color: "#fff",
+    color: "#4f8cff",
     fontSize: 16,
     fontWeight: "normal",
     letterSpacing: 1,
