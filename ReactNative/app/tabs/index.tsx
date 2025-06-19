@@ -20,7 +20,7 @@ export default function TabHome() {
   return (
     <ScrollView style={{ flex: 1, backgroundColor: "#f4f6fa" }}>
       <View style={{ alignItems: "center", paddingBottom: 32 }}>
-        <Header titulo="imc" subtitulo="insira eu calcule" /> {/*header */}
+        <Header titulo="imc" subtitulo="insira e calcule" /> {/*header */}
         <Form /> {/*body */}
       </View>
     </ScrollView>
