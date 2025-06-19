@@ -3,7 +3,7 @@ import { View, useWindowDimensions } from 'react-native';
 import { TabView, SceneMap, TabBar } from 'react-native-tab-view';
 import Index from './index'; 
 import Settings from '../../screen/settings'; 
-import User from '../drawer/_layout'; 
+import pesq from '../../screen/pesquisa'; 
 import { Tabs } from 'expo-router';
 
 export default function TabsLayout() {
@@ -11,9 +11,8 @@ export default function TabsLayout() {
   const [index, setIndex] = useState(1);
 
   const [routes] = useState([
-    { key: 'user', title: 'User' },
+    { key: 'pesq', title: 'sobre imc' },
      { key: 'home', title: 'Imc' },
-    { key: 'settings', title: 'configuraçoes' },
    
    
      
@@ -21,7 +20,7 @@ export default function TabsLayout() {
 
   const renderScene = SceneMap({
    
-     user: User,
+     pesq: pesq,
       home: Index,
     settings: Settings,
   });

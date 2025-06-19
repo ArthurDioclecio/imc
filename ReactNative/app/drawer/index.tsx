@@ -7,8 +7,8 @@ export default function PerfilTab() {
  return (
     <ScrollView style={{ flex: 1, backgroundColor: "#f4f6fa" }}>
       <View style={{ alignItems: "center", paddingBottom: 32 }}>
-        <Header titulo="drawer" subtitulo="informaçoes"/> 
-        <Perfil /> 
+        <Header titulo="weight health" subtitulo="veja seu imc"/> 
+        <Perfil />
 
       </View>
     </ScrollView>

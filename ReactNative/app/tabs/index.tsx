@@ -22,7 +22,6 @@ export default function TabHome() {
       <View style={{ alignItems: "center", paddingBottom: 32 }}>
         <Header titulo="imc" subtitulo="insira eu calcule" /> {/*header */}
         <Form /> {/*body */}
-        <Pesquisa /> {/*body */}
       </View>
     </ScrollView>
   );
