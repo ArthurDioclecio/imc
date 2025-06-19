@@ -10,11 +10,7 @@ export default function Header({ titulo , subtitulo}: HeaderProps) {
   return (
     <View style={styles.header}>
       <Text style={styles.headerText}>{titulo}</Text>
-<<<<<<< HEAD
          <Text style={styles.headerSubText}>{subtitulo}</Text>
-=======
-         <Text style={styles.headerSubText}>insira valores e terá o resultado do IMC</Text>
->>>>>>> 46bc3991539b1f146dc262b546dccfe623b344f1
     </View>
   );
 }

@@ -1,9 +1,5 @@
 import React, { useState } from "react";
 import { Text, View, ScrollView } from "react-native";
-<<<<<<< HEAD
-=======
-import CustomButton from "@/components/CustomButton";
->>>>>>> 46bc3991539b1f146dc262b546dccfe623b344f1
 import Header from "@/components/Header";
 import Form from "@/components/form";
 import Pesquisa from "@/components/pesquisa";
@@ -24,14 +20,8 @@ export default function TabHome() {
   return (
     <ScrollView style={{ flex: 1, backgroundColor: "#f4f6fa" }}>
       <View style={{ alignItems: "center", paddingBottom: 32 }}>
-<<<<<<< HEAD
         <Header titulo="imc" subtitulo="insira eu calcule" /> {/*header */}
         <Form /> {/*body */}
-=======
-        <Header titulo="imc" /> {/*header */}
-        <Form /> {/*body */}
-        <Pesquisa /> {/*body */}
->>>>>>> 46bc3991539b1f146dc262b546dccfe623b344f1
       </View>
     </ScrollView>
   );
